@@ -20,6 +20,7 @@ public class HelloWorldServlet extends HttpServlet {
         PrintWriter out = res.getWriter();
         out.println("<h1>Hello, World!</h1>");
 
+
         if (searchQuery != null) {
             out.println("<p>Here are your results for " + searchQuery + "</p>");
         }
@@ -47,7 +48,8 @@ public class HelloWorldServlet extends HttpServlet {
                 + "<TR>\n" + " <TD>Page Views\n" +
                 "<TD>" + count + "\n" +
                 "</TABLE>\n"
-                + "</BODY></HTML>");
+                + "</BODY></HTML>"
+        );
     }
 }
 
